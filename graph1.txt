@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #include<iostream>
 #include<list>
 using namespace std;
@@ -44,4 +45,52 @@ int main()
     g.addEdge(2,3);
     g.addEdge(3,5);
     return 0;
+=======
+#include<iostream>
+#include<list>
+using namespace std;
+
+class graph
+{
+    int V;
+    list<int>*l;
+    public:
+    graph(int V)
+    {
+        V=v;
+        l=new list<int>[V];
+    }
+    void addEdge(int i,int j,bool undir=true)
+    {
+        l[i]:push_back[j];
+        if(undir)
+        {
+            l[j].push_back[i];
+        }
+    }
+    void printadjlist()
+    {
+        //iterate over all the rows
+        for(i=0;i<v;i++)
+        {
+            cout<<i<<"-->";
+            //every element of ith linked list
+            for(auto node: l[i])
+            cout<<node<<",";
+        }
+        cout<<endl;
+    }
+};
+int main()
+{
+    graph g(6);
+    g.addEdge(0,1);
+    g.addEdge(0,4);
+    g.addEdge(2,1);
+    g.addEdge(3,4);
+    g.addEdge(4,5);
+    g.addEdge(2,3);
+    g.addEdge(3,5);
+    return 0;
+>>>>>>> 51f58286241d6cc7a237f4184ea1c9e98f5154d0
 }

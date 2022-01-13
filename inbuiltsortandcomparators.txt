@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #include<iostream>
 #include<algorithm>
 using namespace std;
@@ -13,4 +14,21 @@ int main()
         cout<<x<<",";
     }
     return 0;
+=======
+#include<iostream>
+#include<algorithm>
+using namespace std;
+
+int main()
+{
+    int arr[]={3,5,4,1,8,3,8,9,12,16,11};
+    int n=sizeof(arr)/sizeof(int);
+    sort(arr,arr+n);
+    reverse(arr,arr+n);
+    for(int x:arr)
+    {
+        cout<<x<<",";
+    }
+    return 0;
+>>>>>>> 51f58286241d6cc7a237f4184ea1c9e98f5154d0
 }

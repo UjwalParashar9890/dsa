@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #include<iostream>
 using namespace std;
 
@@ -27,3 +28,34 @@ int main()
     }
     return 0;
 }
+=======
+#include<iostream>
+using namespace std;
+
+void insertion_sort(int a[],int n)
+{
+    for(int i=1;i<=n-1;i++)
+    {
+        int current=a[i];
+        int prev=i-1;
+        //loop to find the right index where the elemnt current should be inserted
+        while(prev>=0 and a[prev]>current)
+        {
+            a[prev+1]=a[prev];
+            prev=prev-1;
+        }
+    a[prev+1]=current;
+    }
+}
+int main()
+{
+    int arr[]={23,1,6,5,3,67,8};
+    int n = sizeof(arr)/sizeof(int);
+    insertion_sort(arr,n);
+    for(auto x:arr)
+    {
+        cout<<x<<",";
+    }
+    return 0;
+}
+>>>>>>> 51f58286241d6cc7a237f4184ea1c9e98f5154d0
